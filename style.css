@@ -23,6 +23,9 @@ body{
     border-bottom: 1px solid #333;
     padding-bottom: 30px;
 }
+.quiz{
+    padding: 20px 0;
+}
 .quiz h2{
    font-size: 18px;
    color: #001e4d;
@@ -41,9 +44,12 @@ body{
     cursor: pointer;
     transition: all 0.3s;
 }
-.btn:hover{
+.btn:hover:not([disabled]){
     background: #222;
     color: #fff;
+}
+.btn:disabled{
+    cursor: no-drop;
 }
 #next-btn{
     background: #001e4d;
@@ -56,6 +62,11 @@ body{
     border-radius: 4px;
     cursor: pointer;
     display: none;
+}
+.correct{
+    background: #9aeabc;
 
-
+}
+.incorrect{
+    background: #ff9393;
 }
